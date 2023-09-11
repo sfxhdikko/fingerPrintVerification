@@ -20,6 +20,7 @@ const fingerPrintVerification = (fingerPrintTypes) => {
     const rightHandSide = numArray.slice(numArray.length/2);
 
     leftHandSide.forEach((element) => {
+        if(element > 5) return false
         result = element + value;
         newArray.push(result)
     });
